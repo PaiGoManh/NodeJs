@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-[#2563eb] w-full h-[50px] flex items-center text-white">
+        <div class="ml-7 font-bold text-2xl">Sports<span class="text-orange-500">Hub</span></div>
+        <div class="ml-auto flex space-x-8 mr-7">
+            <div class="text-xl font-bold">Home</div>
+            <div class="text-xl font-bold">MyCart</div>
+            <div class="text-xl font-bold">About Us</div>
+        </div>
+    </nav>
+    <div class="w-full h-[600px] bg-gradient-to-r from-black-900 to-gray-200" style="background-image: url('/images/bgsportshub.jpeg'); background-size: cover; background-position: center; opacity: 0.9;">
+        <div class="flex flex-col items-center justify-center h-full text-[white] text-4xl font-bold">
+            <div class="bg-gray">Welcome, <span id="username" class="text-[orange]"></span></div>
+            <div class="pt-4">Explore the Store and Buy Items</div>
+        </div>
+    </div>
+    <div class="p-8">
+        <h1 class="text-2xl font-bold">My Store</h1>
+        <div class="m-8 gap-3 flex">
+            <!-- First Item -->
+            <div class="bg-white border border-1 border-white w-[250px] text-center">
+                <img src="/images/football.jpeg" class="pl-[50px]">
+                <h1 class="text-xl font-bold item-name">Nivia Football</h1>
+                <h1>5 inch</h1>
+                <div class="flex gap-1">
+                    <div class="flex items-center border bg-green-500 text-white ml-[35%]">
+                        <h1 class="text-black">4</h1>
+                        <img src="/images/star.png" class="w-5 h-5" alt="Star">
+                    </div>
+                    <h1>(1000)</h1>
+                </div>
+                <div class="price">₹499</div>
+                <h1 class="text-green-500 font-bold">50% off</h1>
+                <button class="border bg-orange-500 pl-3 pr-3 pt-1 pb-1 mt-4" onclick="Addcart(this)">Add Cart</button>
+                <div class="additem mt-2 mb-10 text-[green]"></div>
+            </div>
+            <!-- Repeat similar divs for other items, just updating the image src, item-name, and price classes -->
+            <div class="bg-white border border-1 border-white w-[250px] text-center ">
+                <img src="/images/volleyball.jpeg" class="ml-[40px] mt-2 w-[140px]">
+                <h1 class="text-xl font-bold item-name">Nivia Volleyball</h1>
+                <h1>5 inch</h1>
+                <div class="flex gap-1">
+                    <div class="flex items-center border bg-green-500 text-white ml-[35%]">
+                        <h1 class="text-black">4</h1>
+                        <img src="/images/star.png" class="w-5 h-5" alt="Star">
+                    </div>
+                    <h1>(1000)</h1>
+                </div>
+                <div class="price">₹599</div>
+                <h1 class="text-green-500 font-bold">30% off</h1>
+                <button class="border bg-orange-500 pl-3 pr-3 pt-1 pb-1 mt-4 mb-4" onclick="Addcart(this)">Add Cart</button>
+                <div class="additem mt-2 mb-10 text-[green]"></div>
+            </div>
+            <div class="bg-white border border-1 border-white w-[250px] text-center ">
+                <img src="/images/Basketball.jpeg" class="w-[120px] ml-[20%] mt-4 mb-3">
+                <h1 class="text-xl font-bold item-name">Nivia Basketball</h1>
+                <h1>5 inch</h1>
+                <div class="flex gap-1">
+                    <div class="flex items-center border bg-green-500 text-white ml-[35%]">
+                        <h1 class="text-black">4</h1>
+                        <img src="/images/star.png" class="w-5 h-5" alt="Star">
+                    </div>
+                    <h1>(1000)</h1>
+                </div>
+                <div class="price">₹699</div>
+                <h1 class="text-green-500 font-bold">20% off</h1>
+                <button class="border bg-orange-500 pl-3 pr-3 pt-1 pb-1 mt-4 mb-4" onclick="Addcart(this)">Add Cart</button>
+                <div class="additem mt-2 mb-10 text-[green]"></div>
+            </div>
+            <div class="bg-white border border-1 border-white w-[250px] text-center ">
+                <img src="/images/handball.jpeg" class="w-[120px] ml-[20%] mt-3 mb-3">
+                <h1 class="text-xl font-bold item-name">Nivia Handball</h1>
+                <h1>5 inch</h1>
+                <div class="flex gap-1">
+                    <div class="flex items-center border bg-green-500 text-white ml-[35%]">
+                        <h1 class="text-black">4</h1>
+                        <img src="/images/star.png" class="w-5 h-5" alt="Star">
+                    </div>
+                    <h1>(1000)</h1>
+                </div>
+                <div class="price">₹799</div>
+                <h1 class="text-green-500 font-bold">10% off</h1>
+                <button class="border bg-orange-500 pl-3 pr-3 pt-1 pb-1 mt-4 mb-4" onclick="Addcart(this)">Add Cart</button>
+                <div class="additem mt-2 mb-10 text-[green]"></div>
+            </div>
+            <div class="bg-white border border-1 border-white w-[250px] text-center ">
+                <img src="/images/cricket.jpeg" class="w-[100px] ml-[30%] mt-5 mb-6">
+                <h1 class="text-xl font-bold item-name">Nivia Cricket Bat</h1>
+                <h1>5 inch</h1>
+                <div class="flex gap-1">
+                    <div class="flex items-center border bg-green-500 text-white ml-[35%]">
+                        <h1 class="text-black">4</h1>
+                        <img src="/images/star.png" class="w-5 h-5" alt="Star">
+                    </div>
+                    <h1>(1000)</h1>
+                </div>
+                <div class="price">₹999</div>
+                <h1 class="text-green-500 font-bold">15% off</h1>
+                <button class="border bg-orange-500 pl-3 pr-3 pt-1 pb-1 mt-4 mb-4" onclick="Addcart(this)">Add Cart</button>
+                <div class="additem mt-2 mb-10 text-[green]"></div>
+            </div>
+        </div>
+    </div>
+    <div class="p-8">
+        <h1 class="text-2xl font-bold">My Cart</h1>
+    </div>
+
+    <div>
+        <div class="">
+            <div class="">
+                <h1 class="">Shopping Cart</h1>
+                <div class="">
+                    <label for="item">Select Item:</label>
+                   <select id="itemsDropdown" class="">
+                            <!-- Options will be added here by JavaScript -->
+                    </select>
+        
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" min="1" value="1" class="" />
+        
+                    <button id="add-to-cart" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Add to Cart</button>
+                </div>
+        
+                <table id="cart" class="w-full mt-4">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Quantity</th>
+                            <th>Price per Item</th>
+                            <th>Total Price</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Cart items will be dynamically added here -->
+                    </tbody>
+                </table>
+    </div>
+    
+            <div class="text-right">
+                <h2 class="text-lg font-semibold">Total Cart Value: $<span id="total-value">0.00</span></h2>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const username = localStorage.getItem("user");
+        document.getElementById("username").innerHTML = username;
+
+        function Addcart1() {
+            
+        }
+    </script>
+</body>
+</html>

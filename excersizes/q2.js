@@ -14,6 +14,7 @@ function getComputerChoice() {
         'snake', 'snake',
         'water', 'water'
     ];
+    
     const randomIndex = Math.floor(Math.random() * weightedChoices.length);
     return weightedChoices[randomIndex];
 }

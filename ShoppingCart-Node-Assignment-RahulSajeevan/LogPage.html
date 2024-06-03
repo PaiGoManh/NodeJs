@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportsHub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/LogPage.js"></script>
+</head>
+<body class="bg-[#e4e4e7]">
+    <div id="success" class="text-[green] text-xl text-right"></div>
+    <div id="notsuccess" class="text-[red] text-xl text-right"></div>
+    <div class="flex ml-[20%] mt-[5%]">
+        <div class="w-[400px] h-[500px] border border-1 bg-[#2563eb] shadow-xl">
+            <div class="m-10 text-4xl font-bold text-white">Login</div>
+            <div class="ml-10 text-xl text-white mt-[-3%]">Check your Orders,</div>
+            <div class="ml-10 text-l text-white mt-[2%]">Wishlist and customized Recommendations.</div>
+            <div><img src="/images/sports items.png" class="w-[200px] ml-[20%] mt-[50%]"></div>
+        </div>
+        <div class="w-[400px] h-[500px] border border-1 bg-[white] shadow-xl">
+            <div class="text-center mt-[20%] text-3xl font-bold text-[#2563eb]">SportsHub</div>
+            <div class="mt-[10%] ml-[20%]">
+                <input type="text" placeholder="EmailId/Username" class="border border-1 border-[#2563eb] pl-2 pt-1 pb-1 font-bold outline-[#2563eb]" id="luser">
+                <div id="error" class="mt-1 text-[red]"></div>
+            </div>
+            <div class="mt-[3%] ml-[20%]">
+                <input type="password" placeholder="Password" class="border border-1 border-[#2563eb] pl-2 pt-1 pb-1 font-bold outline-[#2563eb]" id="lpass">
+                <div id="error1" class="mt-1 text-[red]"></div>
+            </div>
+            <div class="mt-[3%] ml-[20%]">
+                <button class="border border-[#2563eb] border-1 bg-[#2563eb] w-[264px] pb-1 pt-1 text-white" onclick="Login()">Sign IN</button>
+            </div>
+            <div class="text-center mt-[7%]">
+                <div class="text-[#2563eb] font-bold">New to SpotsHub?
+                    <a href="RegPage.html"><span class="text-[orange]">Register</span></a></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        
+    </script>
+</body>
+</html>
