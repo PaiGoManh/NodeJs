@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="form.js" defer></script>
+</head>
+<body>
+    <form class=" ml-[40%] flex flex-col w-[300px] h-[200px] border border-1 border-[red]" id="addform">
+        <input type="text" placeholder="key" required class="w-[250px] mt-5 ml-[10%] border border-2 border-black p-1 " id="itemkey">
+        <input type="text" placeholder="value" required class="w-[250px] mt-5 ml-[10%] border border-2 border-black p-1 " id="itemvalue">
+        <button type="submit" class="">Add</button>
+    </form>
+    <ul id="itemlist" class="mt-5"></ul>
+</body>
+</html>
